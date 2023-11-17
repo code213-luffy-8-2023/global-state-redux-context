@@ -1,0 +1,80 @@
+#root {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16;
+}
+
+.movie-card {
+  width: calc(100% / 3 - 20px);
+  margin: 0 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.movie-card h2 {
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.movie-card .chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.movie-card .chip {
+  display: inline-block;
+  margin: 0 2px 2px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.movie-card .rating {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.single-movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 16;
+}
+
+.feather-loader {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

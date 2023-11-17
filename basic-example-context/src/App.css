@@ -1,0 +1,64 @@
+#root {
+  max-width: 1080px;
+  margin: auto;
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid var(--primary);
+  border-right: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+  border-left: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 2.5rem;
+}
+
+.card {
+  background-color: var(--card-background-color);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--primary);
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  flex-grow: 1;
+  margin: 0;
+}
+
+header button {
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: fit-content;
+}
